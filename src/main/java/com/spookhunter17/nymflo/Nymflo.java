@@ -1,5 +1,6 @@
 package com.spookhunter17.nymflo;
 
+import com.spookhunter17.nymflo.configuration.ConfigurationHandler;
 import com.spookhunter17.nymflo.proxy.IProxy;
 import com.spookhunter17.nymflo.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -14,13 +15,13 @@ public class Nymflo
     @Mod.Instance(Reference.MOD_ID)
     public static Nymflo instance;
 
-    @SidedProxy(clientSide = "com.spookhunter17.nymflo.proxy.ClientProxy", serverSide = "com.spookhunter17.nymflo.proxy.ServerProxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
