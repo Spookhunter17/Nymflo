@@ -1,0 +1,21 @@
+[
+{
+  "modid": "Nymflo",
+  "name": "Nymflo",
+  "description": "A companion and training mod for when you dont have a box of tissues handy!",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Spookhunter17"
+  ],
+  "credits": "Cheers Minijack93 for fixing shit",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
